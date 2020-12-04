@@ -7,3 +7,8 @@ gem "sqlite3", '~> 1.3.6'
 gem "pry"
 gem "require_all"
 gem "faker"
+gem 'tty-prompt'
+
+# to prettify-CLI
+gem 'artii', '~> 2.1', '>= 2.1.2'
+gem 'rainbow'

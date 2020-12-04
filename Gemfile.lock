@@ -13,6 +13,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (9.0.0)
+    artii (2.1.2)
     coderay (1.1.3)
     concurrent-ruby (1.1.7)
     faker (2.15.1)
@@ -23,12 +24,15 @@ GEM
     minitest (5.14.2)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    pastel (0.8.0)
+      tty-color (~> 0.5)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rainbow (3.0.0)
     require_all (3.0.0)
     ruby2_keywords (0.0.2)
     sinatra (2.1.0)
@@ -42,19 +46,33 @@ GEM
     sqlite3 (1.3.13)
     thread_safe (0.3.6)
     tilt (2.0.10)
+    tty-color (0.6.0)
+    tty-cursor (0.7.1)
+    tty-prompt (0.22.0)
+      pastel (~> 0.8)
+      tty-reader (~> 0.8)
+    tty-reader (0.8.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.8)
+      wisper (~> 2.0)
+    tty-screen (0.8.1)
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
+    wisper (2.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activerecord (~> 5.2)
+  artii (~> 2.1, >= 2.1.2)
   faker
   pry
+  rainbow
   require_all
   sinatra-activerecord
   sqlite3 (~> 1.3.6)
+  tty-prompt
 
 BUNDLED WITH
    2.1.4

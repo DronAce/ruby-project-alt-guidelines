@@ -1,0 +1,26 @@
+
+[1mFrom:[0m /mnt/c/Users/okeyn/dev/flatiron/projects/ruby-project-alt-guidelines/lib/Cli.rb:254 CLI#review_delete_menu:
+
+    [1;34m243[0m: [32mdef[0m [1;34mreview_delete_menu[0m
+    [1;34m244[0m:     system [31m[1;31m'[0m[31mclear[1;31m'[0m[31m[0m
+    [1;34m245[0m:     [1;36mself[0m.splash
+    [1;34m246[0m:     puts 
+    [1;34m247[0m:     puts Rainbow([31m[1;31m"[0m[31mDELETE REVIEW[1;31m"[0m[31m[0m).red
+    [1;34m248[0m:     puts 
+    [1;34m249[0m:     review_id = user_reviews.select{|review| review.book.title}.map{|review| review.id }
+    [1;34m250[0m:     titles = []
+    [1;34m251[0m:     titles[[1;34m0[0m] = {}
+    [1;34m252[0m:     titles = user_reviews.each{|review| titles[[1;34m0[0m][review.book.title] = review.id}
+    [1;34m253[0m:     selection = [36m@@prompt[0m.select([31m[1;31m"[0m[31mSelect Review for Deletion (this cannot be reversed)[1;31m"[0m[31m[0m, titles)
+ => [1;34m254[0m:     binding.pry
+    [1;34m255[0m:     delete_review(selection)
+    [1;34m256[0m:     sleep([1;34m1[0m)
+    [1;34m257[0m:     puts
+    [1;34m258[0m:     puts [31m[1;31m"[0m[31mthe review has been removed from your history.[1;31m"[0m[31m[0m
+    [1;34m259[0m:     menu = [36m@@prompt[0m.select([31m[1;31m"[0m[31m[1;35m\n[0m[31m[1;31m"[0m[31m[0m) [32mdo[0m |prompt|
+    [1;34m260[0m:         prompt.choice [31m[1;31m"[0m[31mMain Menu[1;31m"[0m[31m[0m, -> {login_main_menu}
+    [1;34m261[0m:         prompt.choice [31m[1;31m"[0m[31mExit[1;31m"[0m[31m[0m, -> {close_helper}
+    [1;34m262[0m:     [32mend[0m
+    [1;34m263[0m: 
+    [1;34m264[0m: [32mend[0m
+
