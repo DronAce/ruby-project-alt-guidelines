@@ -352,32 +352,6 @@ class CLI
         end
     end
 
-    # def delete_book_menu
-    #     system 'clear'
-    #     self.splash
-    #     puts Rainbow("DELETE BOOK").red
-    #     menu = @@prompt.select("DO YOU WANT TO BOOK OR READ IT") do |prompt|
-    #         prompt.choice Rainbow("DELETE").red
-    #         prompt.choice "READ"
-    #     end
-    #     case menu
-    #     when Rainbow("Yes").red
-    #         Book.delete(@@book.id)
-    #         book_reviews(@@book.id)
-    #         delete_all_book_reviews
-    #         binding.pry
-    #         sleep (0.5)
-    #         system('clear')
-    #         self.splash
-    #         puts 
-    #         puts "Your account: #{Rainbow(@@book.title).coral} was #{Rainbow("DELETED").red}. Returning to login menu."
-    #         sleep(3)
-    #         self.main_menu
-    #     when "No"
-    #         sleep(1)
-    #         self.login_main_menu
-    #     end
-    # end
 
     def delete_all_book_reviews
         book_reviews.destroy_all
